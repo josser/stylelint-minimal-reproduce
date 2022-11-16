@@ -1,0 +1,196 @@
+.general-container {
+  padding: 1.5rem;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: .5rem 0;
+}
+
+.header-txt {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 25px;
+}
+.subheader-txt {
+  color: #9d9d9d;
+  margin: 1.5rem;
+}
+
+.btn-save-highlight-activity {
+  &,
+  &:link,
+  &:visited {
+    height: 40px;
+    width: 86px;
+    border-radius: 4px;
+    padding: 10px 24px 10px 24px;
+    font-weight: 500;
+    background-color: var(--primary-2);
+    color: white;
+    margin-bottom: 3%;
+    margin-inline-end: 3%;
+    display: inline-block;
+    transition: all 0.2s;
+    position: sticky;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    margin-block-start: auto;
+  }
+
+  font-size: 1em;
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+  }
+}
+
+.type-of-highlight {
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  &__img {
+    border-radius: 6px 0 0 6px;
+
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+  }
+
+  &__firstly {
+    font-weight: bold;
+    font-size: 13px;
+    color: #333333;
+    margin-top: -15px;
+    margin-bottom: 0.3rem;
+  }
+
+  &__secondly {
+    color: #808080;
+    font-size: 11px;
+    font-family: $font-family;
+    margin-bottom: 5%;
+  }
+
+  &__heading-third {
+    color: #333333;
+    font-size: 11px;
+    font-family: $font-family;
+  }
+}
+.activities{
+  width: 100%;
+  overflow-y: auto;
+  height: 200px;
+  margin-bottom: 1rem;
+  &// Scroll bar styling
+  ::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+
+  &::-webkit-scrollbar-track {
+    // -webkit-box-shadow: inset 0 0 6px white;
+    box-shadow: inset 0 0 4px white;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    outline: 1px solid transparent;
+  }
+  //scroll bar styling
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 62px;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 4px white;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #DCDCDC;
+  }
+
+}
+.activity-container{
+  padding-inline-start: 1.15rem;
+  padding-inline-end: 1.15rem;
+}
+.container {
+  margin-block-start: .85rem;
+  display: flex;
+  align-content: center;
+  width: 100%;
+  border: 1px solid #EAEBEF;
+  border-radius: 6px;
+}
+
+.image-left-popup {
+  flex: 0 0 96px;
+}
+
+.details-right-popup {
+  margin-left: 2.5%;
+  flex: 1;
+  width: 200px;
+}
+
+.container-icon {
+  display: flex;
+  align-items: center;
+}
+
+.color-icon {
+  color: #515FE4;
+  flex: 0 0 5px;
+}
+
+.event-text {
+  flex: 1;
+  color: #333333;
+  font-size: 11px;
+  font-family: $font-family;
+  margin-left: 1.5%;
+}
+
+.popup__close, .popup__close:visited {
+  opacity: 0;
+  color: #373737;
+  font-size: 2rem;
+  text-decoration: none;
+  margin-left: 93%;
+  cursor: pointer;
+  transition: opacity .5s;
+}
+
+.container:hover .popup__close {
+  opacity: 1;
+}
+
+.container:hover {
+  border: #515FE4 1px solid;
+}
+
+.moreThenFiveActivity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.here, .here:visited {
+  cursor: pointer;
+}
+
+.btn-area {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-area > * {
+  margin: .25rem;
+}
